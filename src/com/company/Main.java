@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	int NoOfRows,NoOfColumns,treeNumber,lastColumnCount,totalNoOftrees;
+	int NoOfRows,NoOfColumns,treeNumber;
 	Scanner sc = new Scanner(System.in);
 	NoOfRows = sc.nextInt();
 	NoOfColumns = sc.nextInt();
 	treeNumber = sc.nextInt();
-	lastColumnCount = (NoOfRows*NoOfColumns)-(NoOfRows-1);
-	totalNoOftrees = NoOfColumns*NoOfRows;
-	if(treeNumber<=NoOfRows || treeNumber%NoOfRows==1 || ((lastColumnCount <= treeNumber) && (treeNumber <= totalNoOftrees)))
+	if(treeNumber<=NoOfColumns || treeNumber%NoOfColumns==1 || treeNumber%NoOfColumns==0)
 	{
 		System.out.println("It is a mango tree.");
 	}
