@@ -11,13 +11,13 @@ public class Main {
 	NoOfColumns = sc.nextInt();
 	treeNumber = sc.nextInt();
 	totalNoOftrees = NoOfColumns*NoOfRows;
-	if(treeNumber<=NoOfColumns || treeNumber%NoOfColumns==1 || treeNumber%NoOfColumns==0)
-	{
-		System.out.println("It is a mango tree.");
-	}
-	else if(treeNumber > totalNoOftrees)
+	if(treeNumber > totalNoOftrees)
 	{
 		System.out.println("Enter a valid tree number.");
+	}
+	else if(treeNumber<=NoOfColumns || treeNumber%NoOfColumns==1 || treeNumber%NoOfColumns==0)
+	{
+		System.out.println("It is a mango tree.");
 	}
 	else
 	{
